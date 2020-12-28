@@ -1,0 +1,8 @@
+header img {
+  @include img-centre;
+  padding: 10px;
+  max-height: 100%;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+}
