@@ -433,12 +433,11 @@ footer {
   margin: 23px 10px; }
 
 .reservation {
-  padding-bottom: 2rem;
+  padding: 30px 20px;
   text-align: center;
   background-color: #f6f6f6; }
   .reservation h2 {
-    margin-top: 0px;
-    padding-top: 2rem; }
+    margin: 0px; }
   .reservation__btn {
     color: white;
     padding: 20px;
