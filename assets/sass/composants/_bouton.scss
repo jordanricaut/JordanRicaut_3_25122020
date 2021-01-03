@@ -1,0 +1,15 @@
+.btn {
+  @include bouton;
+  &:hover {
+    @include bouton-hover;
+  }
+  &--menu {
+    @include bouton;
+    &:hover {
+      @include bouton-hover;
+    }
+    display: block;
+    margin: auto auto 60px;
+    padding: 20px 50px;
+  }
+}
