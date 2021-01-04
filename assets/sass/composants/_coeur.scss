@@ -1,0 +1,33 @@
+.fa-heart {
+  position: absolute;
+  right: $coeur-index;
+  top: $coeur-index;
+  font-size: 20px;
+}
+.fas.fa-heart {
+  top: $coeur-index - 1;
+  right: $coeur-index - 1;
+  font-size: 22px;
+  opacity: 0;
+  color: transparent;
+  background: text linear-gradient(175deg, $color-primary 10%, $color-secondary 90%);
+  margin: 0;
+  &:hover {
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    opacity: 1;
+  }
+}
+i.fas {
+  margin: 25px 10px 25px 20px
+}
+.far.fa-heart.right {
+  font-size: 30px;
+  right: $coeur-menu-right;
+  top:$coeur-menu-top;
+}
+.fas.fa-heart.right {
+  font-size: 32px;
+  right: $coeur-menu-right - 1;
+  top:$coeur-menu-top - 1;
+}
