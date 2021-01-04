@@ -1,0 +1,30 @@
+footer {
+  background-color: $color-footer;
+  display: flex;
+  flex-direction: column;
+  color:white;
+  padding: 20px;
+  img {
+    filter: brightness(100);
+    max-height: 100%;
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    i.fas {
+      margin: 0;
+    }
+    p {
+      margin:0;
+    }
+  }
+  .fas.fa-utensils {
+    margin-right: 15px;
+  }
+  .fas.fa-hands-helping {
+    margin-right: 8px;
+  }
+}
