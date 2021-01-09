@@ -1,0 +1,42 @@
+.anim-plat {
+  animation: fadeIn 2s ease, slideIn ease 1s normal;
+}
+.anim-plat--delay2 {
+  opacity: 0;
+  animation: fadeIn 2s ease 0.4s forwards, slideIn 1s ease 0.4s normal;
+}
+.anim-plat--delay3 {
+  opacity: 0;
+  animation: fadeIn 2s ease 0.8s forwards, slideIn 1s ease 0.8s normal;
+}
+.anim-plat--delay4 {
+  opacity: 0;
+  animation: fadeIn 2s ease 1s forwards, slideIn 1s ease 1s normal;
+}
+/* KEYFRAME */
+/* Animation Entrée des Plats sur page Menu */
+@keyframes slideIn {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+/* Animation Check */
+@keyframes rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

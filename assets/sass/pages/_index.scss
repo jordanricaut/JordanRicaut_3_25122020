@@ -105,6 +105,7 @@
       margin: 0;
     }
     &__desc {
+      position: relative;
       h4 {
         margin: 5px 0 5px 10px;
       }
@@ -121,11 +122,6 @@
     border-radius: 10px 10px 0 0;
   }
 }
-.far.fa-heart {
-  position: absolute;
-  right: 15px;
-  margin-top: 15px;
-}
-i.fas {
+.pos-fct {
   margin: 25px 10px 25px 20px
 }
