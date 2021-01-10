@@ -425,6 +425,75 @@ template {
     transform: rotate(360deg); }
   100% {
     transform: rotate(0); } }
+/* Loader */
+@keyframes animLoader {
+  0% {
+    transform: translatex(0px); }
+  40% {
+    transform: translateX(40px); }
+  80% {
+    transform: translateX(-40px); }
+  99% {
+    transform: translateX(0px);
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes affichageLoader {
+  0% {
+    z-index: 2; }
+  99% {
+    z-index: 2; }
+  100% {
+    z-index: -10000; } }
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1; }
+  55% {
+    color: #99E2D0;
+    transform: translateY(-65px);
+    animation-timing-function: ease-in; }
+  72% {
+    color: #9356DC;
+    transform: translateY(0);
+    animation-timing-function: ease-out; }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in; }
+  90% {
+    color: #FF79DA;
+    transform: translateY(0);
+    animation-timing-function: ease-out; }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in; }
+  100% {
+    color: #353535;
+    transform: translateY(0);
+    animation-timing-function: ease-out; } }
+.loader {
+  background: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  animation: affichageLoader 2.6s ease forwards; }
+  .loader .shrikhand {
+    font-size: 70px;
+    animation: bounce-in-top 3s reverse forwards; }
+    @media all and (max-width: 700px) {
+      .loader .shrikhand {
+        font-size: 40px; } }
+
 header img {
   display: block;
   margin-left: auto;
@@ -572,8 +641,6 @@ footer {
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
     position: relative;
     padding: 10px;
-    /*white-space: nowrap;
-    text-overflow: ellipsis;*/
     overflow: hidden; }
     .card__menu article .desc {
       width: calc(100% - 50px);
