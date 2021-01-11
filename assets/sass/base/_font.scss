@@ -1,8 +1,12 @@
 * {
     font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-display: swap;
 }
 .shrikhand {
   font-family: "Shrikhand", sans-serif;
+  font-weight: normal;
+  font-style: italic;
 }
 @font-face {
     font-family: 'Roboto';
@@ -118,5 +122,5 @@
         url('../fonts/Shrikhand-Regular.woff') format('woff');
     font-weight: normal;
     font-style: italic;
-    font-display: swap;
+    /*font-display: swap;*/
 }
