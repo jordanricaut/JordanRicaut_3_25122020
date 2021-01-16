@@ -1,0 +1,38 @@
+.far.fa-heart.right {
+  font-size: 30px;
+  right: $coeur-menu-right;
+  top: $coeur-menu-top;
+  @media all and (max-width: 700px) {
+    font-size: 25px;
+  }
+}
+.heart {
+  right: $coeur-index;
+  top: $coeur-index;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 25px;
+  &--color {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  &:hover .heart--color{
+    transform: scale(1);
+    opacity: 1;
+  }
+  &:hover {
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px white;
+  }
+}

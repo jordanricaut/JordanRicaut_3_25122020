@@ -1,0 +1,22 @@
+@mixin img-centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin bouton {
+  color: white;
+  padding: 20px;
+  background: linear-gradient(to top,$color-primary ,$color-secondary);
+  border-radius: 100px;
+  border: 0px;
+  box-shadow: 10px 10px 25px -12px rgba(0, 0, 0, 0.5);
+}
+@mixin bouton-hover {
+  background: linear-gradient(to top,lighten($color-primary,5%) ,lighten($color-secondary,5%));
+  box-shadow: 10px 10px 25px -12px rgba(0, 0, 0, 1);
+}
+@mixin reduire-texte {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

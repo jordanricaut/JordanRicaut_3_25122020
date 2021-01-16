@@ -1,0 +1,16 @@
+@import "base/normalize.scss";
+@import "base/font.scss";
+
+@import "utils/variables.scss";
+@import "utils/mixin.scss";
+@import "utils/animation.scss";
+
+@import "layout/loader.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
+
+@import "composants/bouton.scss";
+@import "composants/coeur.scss";
+
+@import "pages/menu.scss";
+@import "pages/index.scss";

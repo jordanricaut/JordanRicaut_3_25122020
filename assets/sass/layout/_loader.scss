@@ -1,0 +1,19 @@
+.loader {
+  background: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  animation: affichageLoader 2.6s ease forwards;
+  & .shrikhand {
+    font-size: 70px;
+    animation: bounce-in-top 3s reverse forwards;
+    @media all and (max-width:700px) {
+      font-size: 40px;
+    }
+  }
+}
